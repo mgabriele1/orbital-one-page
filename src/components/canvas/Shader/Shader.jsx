@@ -1,6 +1,5 @@
 import { useRef, Suspense } from 'react'
 import { useFrame } from '@react-three/fiber'
-import { Stars } from '@react-three/drei'
 import { Sphere, useTexture } from '@react-three/drei'
 import { LayerMaterial, Base, Depth, Fresnel, Texture, Noise } from 'lamina'
 
@@ -8,13 +7,12 @@ export default function Shader() {
   const targetRef = useRef()
   const texture = useTexture(['/img/clouds.png', '/img/volcanic.png'])
   useFrame(({ clock }) => {
-    targetRef.current.rotation.y = (clock.getElapsedTime())/1.6
+    targetRef.current.rotation.y = clock.getElapsedTime() / 1.6
   })
 
   return (
     <>
       <Suspense fallback={null}>
-        <Stars/>
         <Sphere ref={targetRef}>
           <ambientLight intensity={1} />
           <pointLight position={[100, 100, 100]} />

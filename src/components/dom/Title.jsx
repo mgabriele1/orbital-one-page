@@ -1,18 +1,13 @@
-import React from 'react';
+import React from 'react'
+import Logo from './Logo'
 
 export default function Title() {
-    return (
-      <div className='w-full flex flex-col items-center justify-center sm:col-span-2'>
-        <div className='flex items-center w-full justify-center'>
-          <img src='img/logo.png' alt="Logo" className='w-1/12' />
-          <h1 className='text-text font-krona uppercase text-3xl md:text-4xl lg:text-5xl'>
-            Orbital
-          </h1>
-        </div>
-        <h3 className='uppercase text-text-transparent font-space text-xs md:text-sm lg:text-md mt-1 font-bold tracking-widest'>
-          a covid safe interactive art installation 
-        </h3>
-      </div>
-    )
-  }
-  
+  return (
+    <div className='flex flex-col items-center justify-center w-full mt-8 sm:col-span-2'>
+      <Logo className='max-w-full p-4' />
+      <h3 className='px-4 mt-1 text-xs font-bold tracking-widest uppercase text-text-transparent font-space md:text-sm lg:text-md'>
+        a covid safe interactive art installation
+      </h3>
+    </div>
+  )
+}

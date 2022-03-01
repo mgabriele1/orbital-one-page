@@ -1,6 +1,8 @@
 import dynamic from 'next/dynamic'
+import { Stars } from '@react-three/drei'
 // dom components
 import Title from '@/components/dom/Title'
+import Info from '@/components/dom/Info'
 import Time from '@/components/dom/Time'
 import Creators from '@/components/dom/Creators'
 // import Shader from '@/components/canvas/Shader/Shader'
@@ -16,11 +18,14 @@ const Shader = dynamic(() => import('@/components/canvas/Shader/Shader'), {
 // dom components goes here
 const DOM = () => {
   return (
-    <div className='grid grid-rows-4 h-full w-full sm:grid-cols-2 sm:grid-rows-3'>
+    <>
       <Title />
-      <Time />
-      <Creators />
-    </div>
+      <Info />
+      {/* <Time /> */}
+      {/* <Creators /> */}
+    </>
+    // <div className='grid grid-rows-4 h-full w-full sm:grid-cols-2 sm:grid-rows-3'>
+    // </div>
   )
 }
 
@@ -29,6 +34,7 @@ const R3F = () => {
   return (
     <>
       <Shader />
+      <Stars fade={true} />
     </>
   )
 }
