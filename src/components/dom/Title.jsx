@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Title() {
+export default function Title({className}) {
     return (
       <div className='w-full flex flex-col items-center justify-center sm:col-span-2'>
         <div className='flex items-center w-full justify-center'>
