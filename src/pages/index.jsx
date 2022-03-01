@@ -1,4 +1,5 @@
 import dynamic from 'next/dynamic'
+import { Stars } from '@react-three/drei'
 // dom components
 import Title from '@/components/dom/Title'
 import Time from '@/components/dom/Time'
@@ -29,6 +30,7 @@ const R3F = () => {
   return (
     <>
       <Shader />
+      <Stars fade={true} />
     </>
   )
 }
