@@ -17,7 +17,7 @@ const Shader = dynamic(() => import('@/components/canvas/Shader/Shader'), {
 // dom components goes here
 const DOM = () => {
   return (
-    <div className='grid grid-rows-4 h-full w-full sm:grid-cols-2 sm:grid-rows-3'>
+    <div className='grid grid-rows-4 h-full w-full sm:grid-cols-2 sm:grid-rows-3 max-w-6xl mx-auto my-0'>
       <Title />
       <Time />
       <Creators />
