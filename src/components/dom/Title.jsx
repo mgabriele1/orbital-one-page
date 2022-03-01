@@ -4,7 +4,7 @@ export default function Title() {
     return (
       <div className='w-full flex flex-col items-center justify-center sm:col-span-2'>
         <div className='flex items-center w-full justify-center'>
-          <img src='img/logo.png' alt="Logo" className='w-1/12' />
+          <img src='img/logo.png' alt="Logo" className='w-1/12 min-w-80' />
           <h1 className='text-text font-krona uppercase text-3xl md:text-4xl lg:text-5xl'>
             Orbital
           </h1>

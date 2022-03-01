@@ -22,6 +22,9 @@ module.exports = {
       '105': '105px',
       '125': '125px',
     },
+    minWidth: {
+      '80': '80px',
+    },
     extend: {},
   },
   variants: {
